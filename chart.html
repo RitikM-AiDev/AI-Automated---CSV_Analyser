@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Data Analysis & Chart Suggestions</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            font-size: 1.8em;
+            margin-top: 25px;
+            border-left: 5px solid #2ecc71;
+            padding-left: 10px;
+        }
+        h3 {
+            color: #2980b9;
+            font-size: 1.4em;
+            margin-top: 20px;
+            text-decoration: underline;
+            text-decoration-color: #a2d9ce;
+        }
+        h4 {
+            color: #1abc9c;
+            font-size: 1.2em;
+            margin-top: 15px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        strong {
+            color: #e74c3c;
+        }
+        .section-highlight {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 5px solid #f39c12;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 6px solid #ffc107;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 8px;
+            color: #664d03;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSV Data Analysis & Chart Suggestions</h1>
+
+        <p>This document provides a concise analysis of your CSV data, suggesting various chart types to visualize your insights effectively. Understanding your data through charts can reveal trends, comparisons, and distributions at a glance.</p>
+
+        <div class="section-highlight">
+            <h2>Column Type Overview</h2>
+            <ul>
+                <li><strong>Numerical:</strong> 5 columns, perfect for calculations and quantitative comparisons.</li>
+                <li><strong>Categorical:</strong> 7 columns, ideal for grouping and comparing distinct categories.</li>
+                <li><strong>Datetime:</strong> 2 columns, essential for analyzing trends over time.</li>
+            </ul>
+        </div>
+
+        <h2>Chart Suggestions by Purpose</h2>
+
+        <h3>1. Comparison Charts</h3>
+        <p>Compare numerical values across different categories to spot differences and performance variations.</p>
+        <ul>
+            <li>
+                <h4>Bar/Column Chart</h4>
+                <p><strong>Purpose:</strong> Compare a metric across distinct categories (e.g., <strong>Total Revenue</strong> by <strong>Region</strong>, <strong>Units Sold</strong> by <strong>Item Type</strong>).</p>
+            </li>
+            <li>
+                <h4>Grouped Bar Chart</h4>
+                <p><strong>Purpose:</strong> Compare multiple metrics across categories or break down a metric by a sub-category (e.g., <strong>Total Revenue</strong> and <strong>Total Cost</strong> by <strong>Item Type</strong>).</p>
+            </li>
+            <li>
+                <h4>Box Plot</h4>
+                <p><strong>Purpose:</strong> Visualize the distribution and outliers of a numerical variable across categories (e.g., <strong>Total Profit</strong> distribution by <strong>Item Type</strong>).</p>
+            </li>
+        </ul>
+
+        <h3>2. Time Series Charts</h3>
+        <p>Track trends and patterns of numerical data over specific periods.</p>
+        <ul>
+            <li>
+                <h4>Line Chart</h4>
+                <p><strong>Purpose:</strong> Show the trend of a numerical metric over time (e.g., <strong>Total Revenue</strong> over <strong>Order Date</strong>, <strong>Units Sold</strong> over <strong>Ship Date</strong>).</p>
+            </li>
+        </ul>
+
+        <h3>3. Distribution Charts</h3>
+        <p>Understand the spread, frequency, and shape of a single numerical variable.</p>
+        <ul>
+            <li>
+                <h4>Histogram</h4>
+                <p><strong>Purpose:</strong> Display the frequency distribution of a numerical dataset (e.g., distribution of <strong>Total Revenue</strong>, <strong>Units Sold</strong>).</p>
+            </li>
+        </ul>
+
+        <h3>4. Relationship Charts</h3>
+        <p>Identify correlations and relationships between two continuous numerical variables.</p>
+        <ul>
+            <li>
+                <h4>Scatter Plot</h4>
+                <p><strong>Purpose:</strong> Show patterns, clusters, and correlations (e.g., <strong>Units Sold</strong> vs. <strong>Total Revenue</strong>, <strong>Total Cost</strong> vs. <strong>Total Profit</strong>).</p>
+            </li>
+        </ul>
+
+        <h3>5. Part-to-Whole Charts</h3>
+        <p>Illustrate the proportional contribution of each category to a total.</p>
+        <ul>
+            <li>
+                <h4>Pie/Donut Chart</h4>
+                <p><strong>Purpose:</strong> Represent the proportional share of categories (e.g., <strong>Total Revenue</strong> by <strong>Region</strong>, <strong>Units Sold</strong> by <strong>Sales Channel</strong>).</p>
+            </li>
+        </ul>
+
+        <h3>6. Composition Charts</h3>
+        <p>Visualize how different parts contribute to a total across various categories.</p>
+        <ul>
+            <li>
+                <h4>Stacked Bar Chart</h4>
+                <p><strong>Purpose:</strong> Show the composition of a total numerical value segmented by another category (e.g., <strong>Total Revenue</strong> and <strong>Total Cost</strong> stacked by <strong>Region</strong>).</p>
+            </li>
+        </ul>
+
+        <h3>7. Geospatial Charts</h3>
+        <p>When geographic data is available, these charts visualize data on a map.</p>
+        <ul>
+            <li>
+                <h4>Choropleth Map</h4>
+                <p><strong>Purpose:</strong> Visualize numerical data geographically, coloring regions or countries based on aggregated values (e.g., <strong>Total Revenue</strong> by <strong>Country</strong>).</p>
+            </li>
+        </ul>
+
+        <div class="note">
+            <h3>Important Note on 'Unit Price' and 'Unit Cost':</h3>
+            <p>While classified as <strong>Categorical</strong>, if 'Unit Price' and 'Unit Cost' contain distinct numerical values, they can be treated as <strong>Numerical</strong>. This would enable additional powerful visualizations like Histograms for their distribution or Scatter Plots to explore relationships such as <strong>Unit Price</strong> vs. <strong>Units Sold</strong>, offering deeper insights into pricing strategies and profitability.</p>
+        </div>
+
+    </div>
+</body>
+</html>
