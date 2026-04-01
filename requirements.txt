@@ -1,0 +1,7 @@
+gradio
+pandas
+python-dateutil
+langchain-core
+langgraph
+python-dotenv
+openai
